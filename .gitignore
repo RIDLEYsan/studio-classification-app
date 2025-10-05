@@ -66,3 +66,8 @@ logs/
 
 # 特定のフォルダ
 batch_processing/studio_photos/
+.env
+deployments/
+deploy.zip
+.env
+startup.sh
