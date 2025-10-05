@@ -71,3 +71,9 @@ deployments/
 deploy.zip
 .env
 startup.sh
+.env
+startup.sh
+deploy-ready/
+deploy-clean/
+logs/
+*.zip
