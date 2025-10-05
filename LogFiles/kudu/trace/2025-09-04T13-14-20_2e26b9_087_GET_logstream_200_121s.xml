@@ -1,0 +1,6 @@
+<step title="Incoming Request" date="2025-09-04T13:14:20.546" instance="2e26b9" url="/logstream" method="GET" type="request" pid="803,1,36" Host="studio-classifier-app.scm.azurewebsites.net" User-Agent="AZURECLI/2.76.0 (HOMEBREW)" Accept-Encoding="identity" Authorization="Bea..." x-ms-client-request-id="f2515ae6-8990-11f0-9839-a2412615f55d" X-ARR-LOG-ID="f2515ae6-8990-11f0-9839-a2412615f55d" CLIENT-IP="106.72.161.224:55103" X-SITE-DEPLOYMENT-ID="studio-classifier-app" WAS-DEFAULT-HOSTNAME="studio-classifier-app.scm.azurewebsites.net" X-Forwarded-Proto="https" X-AppService-Proto="https" X-Forwarded-TlsVersion="1.3" X-WAWS-Unencoded-URL="/logstream" X-Client-IP="106.72.161.224" X-Client-Port="55103" >
+  <step title="Cleanup Xml Logs" date="2025-09-04T13:14:20.554" /><!-- duration: 16ms -->
+  <step title="LogStreamHandlerMiddleware.Invoke" date="2025-09-04T13:14:20.600" /><!-- duration: 1061ms -->
+  <step title="Error occurred" date="2025-09-04T13:16:21.661" type="error" text="LogStreamManager: ProcessRequest end" /><!-- duration: 6ms -->
+  <step title="Outgoing response" date="2025-09-04T13:16:21.683" type="response" statusCode="200" statusText="OK" /><!-- duration: 6ms -->
+</step><!-- duration: 121149ms -->

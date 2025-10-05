@@ -1,0 +1,19 @@
+<step title="Incoming Request" date="2025-09-03T20:53:00.449" instance="2e26b9" url="/api/zipdeploy?isAsync=true" method="POST" type="request" pid="803,1,3" Accept="*/*" Host="studio-classifier-app.scm.azurewebsites.net" User-Agent="AZURECLI/2.76.0 (HOMEBREW)" Accept-Encoding="gzip, deflate" Authorization="Bea..." Cache-Control="no-cache" Content-Type="application/octet-stream" Cookie="ARRAffinity=2e26b9eec13e33520e8ba9a60ce242d3f459ddfc6700c3d58e662022bf325e62; ARRAffinitySameSite=2e26b9eec13e33520e8ba9a60ce242d3f459ddfc6700c3d58e662022bf325e62" Content-Length="565349218" x-ms-client-request-id="d6ee639a-8907-11f0-b50c-a2412615f55d" x-ms-artifact-checksum="36551e065ec28fb59a6350b8c204f92519df2dd7ba3a3f0089a37996f367f87a" X-ARR-LOG-ID="d6ee639a-8907-11f0-b50c-a2412615f55d" CLIENT-IP="106.72.161.224:42806" X-SITE-DEPLOYMENT-ID="studio-classifier-app" WAS-DEFAULT-HOSTNAME="studio-classifier-app.scm.azurewebsites.net" X-Forwarded-Proto="https" X-AppService-Proto="https" X-Forwarded-TlsVersion="1.3" X-WAWS-Unencoded-URL="/api/zipdeploy?isAsync=true" X-Client-IP="106.72.161.224" X-Client-Port="42806" >
+  <step title="Cleanup Xml Logs" date="2025-09-03T20:53:00.477" /><!-- duration: 39ms -->
+  <step title="ZipPushDeploy" date="2025-09-03T20:53:00.638" >
+    <step title="ZipDeploy. Extract zip. Remote build." date="2025-09-03T20:53:00.705" /><!-- duration: 6ms -->
+    <step title="None repository commit" date="2025-09-03T20:53:00.746" >
+      <step title="Commit id: 01dccb62-eb98-4d46-bc72-8475174ca874" date="2025-09-03T20:53:00.752" Message="N/A" AuthorName="N/A" AuthorEmail="N/A" /><!-- duration: 6ms -->
+    </step><!-- duration: 18ms -->
+    <step title="Starting PushDeployAsync" date="2025-09-03T20:53:00.770" /><!-- duration: 6ms -->
+    <step title="Writing artifact to /tmp/zipdeploy/10c4e27e-e933-4941-9926-f9726ac4110a.zip" date="2025-09-03T20:53:00.822" >
+      <step title="Writing multipart request body to /tmp/zipdeploy/10c4e27e-e933-4941-9926-f9726ac4110a.zip" date="2025-09-03T20:53:00.829" /><!-- duration: 11ms -->
+    </step><!-- duration: 164503ms -->
+    <step title="Removing previous build artifact&apos;s manifest file" date="2025-09-03T20:55:45.343" >
+      <step title="Start deployment in the background" date="2025-09-03T20:55:45.364" >
+        <step title="Acquiring Deployment Lock" date="2025-09-03T20:55:45.408" /><!-- duration: 6ms -->
+        <step title="Acquired Deployment Lock" date="2025-09-03T20:55:45.508" /><!-- duration: 6ms -->
+      </step><!-- duration: 258ms -->
+    </step><!-- duration: 291ms -->
+    <step title="Outgoing response" date="2025-09-03T20:55:45.645" type="response" statusCode="202" statusText="Accepted" /><!-- duration: 17ms -->
+  </step><!-- duration: 165030ms -->

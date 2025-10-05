@@ -1,0 +1,68 @@
+# 画像・動画ファイル
+*.jpg
+*.jpeg
+*.JPG
+*.JPEG
+*.png
+*.PNG
+*.webp
+*.HEIC
+*.heic
+*.MOV
+*.mov
+*.mp4
+*.avi
+
+# データベースファイル
+*.db
+*.sqlite
+*.sqlite3
+
+# Zipファイル
+*.zip
+
+# Pythonキャッシュ
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+
+# 仮想環境
+venv/
+env/
+ENV/
+.venv
+
+# エディタ・IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# バックアップファイル
+*.backup
+*.backup*
+*.bak
+*.old
+*.original
+*_old.py
+*_broken.py
+
+# デプロイメント関連
+deployments/
+deploy-*/
+
+# テスト・一時ファイル
+test.ipynb
+test*.py
+*.tmp
+
+# ログファイル
+*.log
+logs/
+
+# 特定のフォルダ
+batch_processing/studio_photos/

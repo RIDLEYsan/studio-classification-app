@@ -1,0 +1,207 @@
+2025-09-04T12:29:13  Fetching changes.
+2025-09-04T12:29:13    Starting  LocalZipHandler
+2025-09-04T12:29:13    Cleaning up temp folders from previous zip deployments and extracting pushed zip file /tmp/zipdeploy/0b0f5996-05c8-4ea0-a4db-08a1d54f5f0f.zip (0.05 MB) to /tmp/zipdeploy/extracted
+2025-09-04T12:29:16  Updating submodules.
+2025-09-04T12:29:16  Preparing deployment for commit id '811aa43b-2'.
+2025-09-04T12:29:17  PreDeployment: context.CleanOutputPath False
+2025-09-04T12:29:17  PreDeployment: context.OutputPath /home/site/wwwroot
+2025-09-04T12:29:17  Repository path is /tmp/zipdeploy/extracted
+2025-09-04T12:29:17  Running oryx build...
+2025-09-04T12:29:17    Command: oryx build /tmp/zipdeploy/extracted -o /home/site/wwwroot --platform python --platform-version 3.9 -p virtualenv_name=antenv --log-file /tmp/build-debug.log  -i /tmp/8ddebaeaa4fdcc8 --compress-destination-dir | tee /tmp/oryx-build.log
+2025-09-04T12:29:19    Operation performed by Microsoft Oryx, https://github.com/Microsoft/Oryx
+2025-09-04T12:29:19    You can report issues at https://github.com/Microsoft/Oryx/issues
+2025-09-04T12:29:19    
+2025-09-04T12:29:19    Oryx Version: 0.2.20250611.1+0649de32f1279969c9023dd41b389cce4bb94493, Commit: 0649de32f1279969c9023dd41b389cce4bb94493, ReleaseTagName: 20250611.1
+2025-09-04T12:29:19    
+2025-09-04T12:29:19    Build Operation ID: 0026d034237c15fc
+2025-09-04T12:29:19    Repository Commit : 811aa43b-24be-4c90-bb6d-faa7023e6b6c
+2025-09-04T12:29:19    OS Type           : buster
+2025-09-04T12:29:19    Image Type        : githubactions
+2025-09-04T12:29:19    
+2025-09-04T12:29:19    Primary SDK Storage URL: https://oryx-cdn.microsoft.io
+2025-09-04T12:29:20    Backup SDK Storage URL: https://oryxsdks-cdn.azureedge.net
+2025-09-04T12:29:20    Detecting platforms...
+2025-09-04T12:29:21    Detected following platforms:
+2025-09-04T12:29:21      python: 3.9.23
+2025-09-04T12:29:21    
+2025-09-04T12:29:21    Using intermediate directory '/tmp/8ddebaeaa4fdcc8'.
+2025-09-04T12:29:21    
+2025-09-04T12:29:21    Copying files to the intermediate directory...
+2025-09-04T12:29:21    Done in 0 sec(s).
+2025-09-04T12:29:21    
+2025-09-04T12:29:21    Source directory     : /tmp/8ddebaeaa4fdcc8
+2025-09-04T12:29:22    Destination directory: /home/site/wwwroot
+2025-09-04T12:29:22    
+2025-09-04T12:29:22    Python Version: /tmp/oryx/platforms/python/3.9.23/bin/python3.9
+2025-09-04T12:29:22    Creating directory for command manifest file if it does not exist
+2025-09-04T12:29:22    Removing existing manifest file
+2025-09-04T12:29:22    Python Virtual Environment: antenv
+2025-09-04T12:29:22    Creating virtual environment...
+2025-09-04T12:29:32    Activating virtual environment...
+2025-09-04T12:29:32    Running pip install...
+2025-09-04T12:31:10    [12:29:33+0000] Collecting google-generativeai==0.8.3
+2025-09-04T12:31:10    [12:29:33+0000]   Using cached google_generativeai-0.8.3-py3-none-any.whl (160 kB)
+2025-09-04T12:31:10    [12:29:33+0000] Collecting python-dotenv==1.0.1
+2025-09-04T12:31:10    [12:29:33+0000]   Using cached python_dotenv-1.0.1-py3-none-any.whl (19 kB)
+2025-09-04T12:31:10    [12:29:35+0000] Collecting pillow==10.4.0
+2025-09-04T12:31:11    [12:29:35+0000]   Using cached pillow-10.4.0-cp39-cp39-manylinux_2_28_x86_64.whl (4.5 MB)
+2025-09-04T12:31:11    [12:29:35+0000] Collecting streamlit==1.39.0
+2025-09-04T12:31:11    [12:29:35+0000]   Using cached streamlit-1.39.0-py2.py3-none-any.whl (8.7 MB)
+2025-09-04T12:31:11    [12:29:36+0000] Collecting pydantic
+2025-09-04T12:31:11    [12:29:36+0000]   Using cached pydantic-2.11.7-py3-none-any.whl (444 kB)
+2025-09-04T12:31:11    [12:29:36+0000] Collecting google-auth>=2.15.0
+2025-09-04T12:31:11    [12:29:36+0000]   Using cached google_auth-2.40.3-py2.py3-none-any.whl (216 kB)
+2025-09-04T12:31:11    [12:29:37+0000] Collecting google-api-python-client
+2025-09-04T12:31:11    [12:29:37+0000]   Using cached google_api_python_client-2.181.0-py3-none-any.whl (14.1 MB)
+2025-09-04T12:31:11    [12:29:37+0000] Collecting typing-extensions
+2025-09-04T12:31:11    [12:29:37+0000]   Using cached typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+2025-09-04T12:31:11    [12:29:37+0000] Collecting google-api-core
+2025-09-04T12:31:12    [12:29:37+0000]   Using cached google_api_core-2.25.1-py3-none-any.whl (160 kB)
+2025-09-04T12:31:12    [12:29:39+0000] Collecting protobuf
+2025-09-04T12:31:12    [12:29:39+0000]   Using cached protobuf-6.32.0-cp39-abi3-manylinux2014_x86_64.whl (322 kB)
+2025-09-04T12:31:12    [12:29:39+0000] Collecting google-ai-generativelanguage==0.6.10
+2025-09-04T12:31:12    [12:29:39+0000]   Using cached google_ai_generativelanguage-0.6.10-py3-none-any.whl (760 kB)
+2025-09-04T12:31:12    [12:29:39+0000] Collecting tqdm
+2025-09-04T12:31:12    [12:29:39+0000]   Using cached tqdm-4.67.1-py3-none-any.whl (78 kB)
+2025-09-04T12:31:12    [12:29:39+0000] Collecting tornado<7,>=6.0.3
+2025-09-04T12:31:12    [12:29:39+0000]   Using cached tornado-6.5.2-cp39-abi3-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (443 kB)
+2025-09-04T12:31:12    [12:29:39+0000] Collecting blinker<2,>=1.0.0
+2025-09-04T12:31:12    [12:29:39+0000]   Using cached blinker-1.9.0-py3-none-any.whl (8.5 kB)
+2025-09-04T12:31:12    [12:29:39+0000] Collecting packaging<25,>=20
+2025-09-04T12:31:12    [12:29:39+0000]   Using cached packaging-24.2-py3-none-any.whl (65 kB)
+2025-09-04T12:31:13    [12:29:40+0000] Collecting click<9,>=7.0
+2025-09-04T12:31:13    [12:29:40+0000]   Using cached click-8.1.8-py3-none-any.whl (98 kB)
+2025-09-04T12:31:13    [12:29:40+0000] Collecting protobuf
+2025-09-04T12:31:13    [12:29:40+0000]   Using cached protobuf-5.29.5-cp38-abi3-manylinux2014_x86_64.whl (319 kB)
+2025-09-04T12:31:13    [12:29:40+0000] Collecting cachetools<6,>=4.0
+2025-09-04T12:31:13    [12:29:40+0000]   Using cached cachetools-5.5.2-py3-none-any.whl (10 kB)
+2025-09-04T12:31:13    [12:29:40+0000] Collecting tenacity<10,>=8.1.0
+2025-09-04T12:31:13    [12:29:40+0000]   Using cached tenacity-9.1.2-py3-none-any.whl (28 kB)
+2025-09-04T12:31:13    [12:29:40+0000] Collecting toml<2,>=0.10.1
+2025-09-04T12:31:13    [12:29:40+0000]   Using cached toml-0.10.2-py2.py3-none-any.whl (16 kB)
+2025-09-04T12:31:13    [12:29:41+0000] Collecting pyarrow>=7.0
+2025-09-04T12:31:13    [12:29:42+0000]   Using cached pyarrow-21.0.0-cp39-cp39-manylinux_2_28_x86_64.whl (42.7 MB)
+2025-09-04T12:31:13    [12:29:43+0000] Collecting watchdog<6,>=2.1.5
+2025-09-04T12:31:13    [12:29:43+0000]   Using cached watchdog-5.0.3-py3-none-manylinux2014_x86_64.whl (79 kB)
+2025-09-04T12:31:13    [12:29:43+0000] Collecting pydeck<1,>=0.8.0b4
+2025-09-04T12:31:13    [12:29:43+0000]   Using cached pydeck-0.9.1-py2.py3-none-any.whl (6.9 MB)
+2025-09-04T12:31:14    [12:29:44+0000] Collecting pandas<3,>=1.4.0
+2025-09-04T12:31:14    [12:29:44+0000]   Using cached pandas-2.3.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (12.4 MB)
+2025-09-04T12:31:14    [12:29:44+0000] Collecting altair<6,>=4.0
+2025-09-04T12:31:14    [12:29:44+0000]   Using cached altair-5.5.0-py3-none-any.whl (731 kB)
+2025-09-04T12:31:14    [12:29:44+0000] Collecting rich<14,>=10.14.0
+2025-09-04T12:31:14    [12:29:44+0000]   Using cached rich-13.9.4-py3-none-any.whl (242 kB)
+2025-09-04T12:31:14    [12:29:46+0000] Collecting numpy<3,>=1.20
+2025-09-04T12:31:14    [12:29:46+0000]   Using cached numpy-2.0.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (19.5 MB)
+2025-09-04T12:31:14    [12:29:46+0000] Collecting gitpython!=3.1.19,<4,>=3.0.7
+2025-09-04T12:31:14    [12:29:46+0000]   Using cached gitpython-3.1.45-py3-none-any.whl (208 kB)
+2025-09-04T12:31:14    [12:29:47+0000] Collecting requests<3,>=2.27
+2025-09-04T12:31:14    [12:29:47+0000]   Using cached requests-2.32.5-py3-none-any.whl (64 kB)
+2025-09-04T12:31:14    [12:29:47+0000] Collecting proto-plus<2.0.0dev,>=1.22.3
+2025-09-04T12:31:14    [12:29:47+0000]   Using cached proto_plus-1.26.1-py3-none-any.whl (50 kB)
+2025-09-04T12:31:14    [12:29:48+0000] Collecting narwhals>=1.14.2
+2025-09-04T12:31:14    [12:29:48+0000]   Using cached narwhals-2.3.0-py3-none-any.whl (404 kB)
+2025-09-04T12:31:15    [12:29:49+0000] Collecting jinja2
+2025-09-04T12:31:15    [12:29:49+0000]   Using cached jinja2-3.1.6-py3-none-any.whl (134 kB)
+2025-09-04T12:31:15    [12:29:49+0000] Collecting jsonschema>=3.0
+2025-09-04T12:31:15    [12:29:49+0000]   Using cached jsonschema-4.25.1-py3-none-any.whl (90 kB)
+2025-09-04T12:31:15    [12:29:50+0000] Collecting gitdb<5,>=4.0.1
+2025-09-04T12:31:15    [12:29:50+0000]   Using cached gitdb-4.0.12-py3-none-any.whl (62 kB)
+2025-09-04T12:31:15    [12:29:50+0000] Collecting rsa<5,>=3.1.4
+2025-09-04T12:31:15    [12:29:50+0000]   Using cached rsa-4.9.1-py3-none-any.whl (34 kB)
+2025-09-04T12:31:15    [12:29:50+0000] Collecting pyasn1-modules>=0.2.1
+2025-09-04T12:31:15    [12:29:50+0000]   Using cached pyasn1_modules-0.4.2-py3-none-any.whl (181 kB)
+2025-09-04T12:31:15    [12:29:51+0000] Collecting pytz>=2020.1
+2025-09-04T12:31:15    [12:29:51+0000]   Using cached pytz-2025.2-py2.py3-none-any.whl (509 kB)
+2025-09-04T12:31:15    [12:29:51+0000] Collecting tzdata>=2022.7
+2025-09-04T12:31:15    [12:29:51+0000]   Using cached tzdata-2025.2-py2.py3-none-any.whl (347 kB)
+2025-09-04T12:31:16    [12:29:52+0000] Collecting python-dateutil>=2.8.2
+2025-09-04T12:31:16    [12:29:52+0000]   Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+2025-09-04T12:31:16    [12:29:52+0000] Collecting certifi>=2017.4.17
+2025-09-04T12:31:16    [12:29:52+0000]   Using cached certifi-2025.8.3-py3-none-any.whl (161 kB)
+2025-09-04T12:31:16    [12:29:52+0000] Collecting idna<4,>=2.5
+2025-09-04T12:31:16    [12:29:52+0000]   Using cached idna-3.10-py3-none-any.whl (70 kB)
+2025-09-04T12:31:16    [12:29:52+0000] Collecting urllib3<3,>=1.21.1
+2025-09-04T12:31:16    [12:29:52+0000]   Using cached urllib3-2.5.0-py3-none-any.whl (129 kB)
+2025-09-04T12:31:16    [12:29:53+0000] Collecting charset_normalizer<4,>=2
+2025-09-04T12:31:16    [12:29:53+0000]   Using cached charset_normalizer-3.4.3-cp39-cp39-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (152 kB)
+2025-09-04T12:31:16    [12:29:53+0000] Collecting pygments<3.0.0,>=2.13.0
+2025-09-04T12:31:16    [12:29:53+0000]   Using cached pygments-2.19.2-py3-none-any.whl (1.2 MB)
+2025-09-04T12:31:16    [12:29:53+0000] Collecting markdown-it-py>=2.2.0
+2025-09-04T12:31:16    [12:29:53+0000]   Using cached markdown_it_py-3.0.0-py3-none-any.whl (87 kB)
+2025-09-04T12:31:16    [12:29:53+0000] Collecting googleapis-common-protos<2.0.0,>=1.56.2
+2025-09-04T12:31:16    [12:29:53+0000]   Using cached googleapis_common_protos-1.70.0-py3-none-any.whl (294 kB)
+2025-09-04T12:31:17    [12:29:54+0000] Collecting uritemplate<5,>=3.0.1
+2025-09-04T12:31:17    [12:29:54+0000]   Using cached uritemplate-4.2.0-py3-none-any.whl (11 kB)
+2025-09-04T12:31:17    [12:29:54+0000] Collecting httplib2<1.0.0,>=0.19.0
+2025-09-04T12:31:17    [12:29:54+0000]   Using cached httplib2-0.30.0-py3-none-any.whl (91 kB)
+2025-09-04T12:31:17    [12:29:54+0000] Collecting google-auth-httplib2<1.0.0,>=0.2.0
+2025-09-04T12:31:17    [12:29:54+0000]   Using cached google_auth_httplib2-0.2.0-py2.py3-none-any.whl (9.3 kB)
+2025-09-04T12:31:17    [12:29:54+0000] Collecting typing-inspection>=0.4.0
+2025-09-04T12:31:17    [12:29:54+0000]   Using cached typing_inspection-0.4.1-py3-none-any.whl (14 kB)
+2025-09-04T12:31:17    [12:29:59+0000] Collecting pydantic-core==2.33.2
+2025-09-04T12:31:18    [12:29:59+0000]   Using cached pydantic_core-2.33.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.0 MB)
+2025-09-04T12:31:18    [12:29:59+0000] Collecting annotated-types>=0.6.0
+2025-09-04T12:31:18    [12:29:59+0000]   Using cached annotated_types-0.7.0-py3-none-any.whl (13 kB)
+2025-09-04T12:31:18    [12:29:59+0000] Collecting smmap<6,>=3.0.1
+2025-09-04T12:31:18    [12:29:59+0000]   Using cached smmap-5.0.2-py3-none-any.whl (24 kB)
+2025-09-04T12:31:18    [12:30:00+0000] Collecting grpcio-status<2.0.0,>=1.33.2
+2025-09-04T12:31:18    [12:30:00+0000]   Using cached grpcio_status-1.74.0-py3-none-any.whl (14 kB)
+2025-09-04T12:31:18    [12:30:08+0000] Collecting grpcio<2.0.0,>=1.33.2
+2025-09-04T12:31:18    [12:30:08+0000]   Using cached grpcio-1.74.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (6.2 MB)
+2025-09-04T12:31:18    [12:30:08+0000] Collecting pyparsing<4,>=3.0.4
+2025-09-04T12:31:18    [12:30:08+0000]   Using cached pyparsing-3.2.3-py3-none-any.whl (111 kB)
+2025-09-04T12:31:18    [12:30:08+0000] Collecting MarkupSafe>=2.0
+2025-09-04T12:31:19    [12:30:08+0000]   Using cached MarkupSafe-3.0.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (20 kB)
+2025-09-04T12:31:19    [12:30:09+0000] Collecting attrs>=22.2.0
+2025-09-04T12:31:19    [12:30:09+0000]   Using cached attrs-25.3.0-py3-none-any.whl (63 kB)
+2025-09-04T12:31:19    [12:30:09+0000] Collecting referencing>=0.28.4
+2025-09-04T12:31:19    [12:30:09+0000]   Using cached referencing-0.36.2-py3-none-any.whl (26 kB)
+2025-09-04T12:31:19    [12:30:09+0000] Collecting jsonschema-specifications>=2023.03.6
+2025-09-04T12:31:19    [12:30:09+0000]   Using cached jsonschema_specifications-2025.4.1-py3-none-any.whl (18 kB)
+2025-09-04T12:31:19    [12:30:11+0000] Collecting rpds-py>=0.7.1
+2025-09-04T12:31:19    [12:30:11+0000]   Using cached rpds_py-0.27.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (384 kB)
+2025-09-04T12:31:19    [12:30:12+0000] Collecting mdurl~=0.1
+2025-09-04T12:31:20    [12:30:12+0000]   Using cached mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+2025-09-04T12:31:20    [12:30:13+0000] Collecting pyasn1<0.7.0,>=0.6.1
+2025-09-04T12:31:20    [12:30:13+0000]   Using cached pyasn1-0.6.1-py3-none-any.whl (83 kB)
+2025-09-04T12:31:20    [12:30:14+0000] Collecting six>=1.5
+2025-09-04T12:31:20    [12:30:14+0000]   Using cached six-1.17.0-py2.py3-none-any.whl (11 kB)
+2025-09-04T12:31:20    [12:30:15+0000] Collecting grpcio-status<2.0.0,>=1.33.2
+2025-09-04T12:31:20    [12:30:15+0000]   Using cached grpcio_status-1.73.1-py3-none-any.whl (14 kB)
+2025-09-04T12:31:20    [12:30:16+0000]   Using cached grpcio_status-1.73.0-py3-none-any.whl (14 kB)
+2025-09-04T12:31:20    [12:30:16+0000]   Using cached grpcio_status-1.72.2-py3-none-any.whl (14 kB)
+2025-09-04T12:31:20    [12:30:16+0000]   Using cached grpcio_status-1.72.1-py3-none-any.whl (14 kB)
+2025-09-04T12:31:20    [12:30:16+0000]   Using cached grpcio_status-1.71.2-py3-none-any.whl (14 kB)
+2025-09-04T12:31:21    [12:30:18+0000] Installing collected packages: pytz, watchdog, urllib3, uritemplate, tzdata, typing-extensions, tqdm, tornado, toml, tenacity, smmap, six, rpds-py, python-dotenv, pyparsing, pygments, pyasn1, pyarrow, protobuf, pillow, packaging, numpy, narwhals, mdurl, MarkupSafe, idna, grpcio, click, charset_normalizer, certifi, cachetools, blinker, attrs, annotated-types, typing-inspection, rsa, requests, referencing, python-dateutil, pydantic-core, pyasn1-modules, proto-plus, markdown-it-py, jinja2, httplib2, googleapis-common-protos, gitdb, rich, pydeck, pydantic, pandas, jsonschema-specifications, grpcio-status, google-auth, gitpython, jsonschema, google-auth-httplib2, google-api-core, google-api-python-client, altair, streamlit, google-ai-generativelanguage, google-generativeai
+2025-09-04T12:31:21    [12:31:07+0000] Successfully installed MarkupSafe-3.0.2 altair-5.5.0 annotated-types-0.7.0 attrs-25.3.0 blinker-1.9.0 cachetools-5.5.2 certifi-2025.8.3 charset_normalizer-3.4.3 click-8.1.8 gitdb-4.0.12 gitpython-3.1.45 google-ai-generativelanguage-0.6.10 google-api-core-2.25.1 google-api-python-client-2.181.0 google-auth-2.40.3 google-auth-httplib2-0.2.0 google-generativeai-0.8.3 googleapis-common-protos-1.70.0 grpcio-1.74.0 grpcio-status-1.71.2 httplib2-0.30.0 idna-3.10 jinja2-3.1.6 jsonschema-4.25.1 jsonschema-specifications-2025.4.1 markdown-it-py-3.0.0 mdurl-0.1.2 narwhals-2.3.0 numpy-2.0.2 packaging-24.2 pandas-2.3.2 pillow-10.4.0 proto-plus-1.26.1 protobuf-5.29.5 pyarrow-21.0.0 pyasn1-0.6.1 pyasn1-modules-0.4.2 pydantic-2.11.7 pydantic-core-2.33.2 pydeck-0.9.1 pygments-2.19.2 pyparsing-3.2.3 python-dateutil-2.9.0.post0 python-dotenv-1.0.1 pytz-2025.2 referencing-0.36.2 requests-2.32.5 rich-13.9.4 rpds-py-0.27.1 rsa-4.9.1 six-1.17.0 smmap-5.0.2 streamlit-1.39.0 tenacity-9.1.2 toml-0.10.2 tornado-6.5.2 tqdm-4.67.1 typing-extensions-4.15.0 typing-inspection-0.4.1 tzdata-2025.2 uritemplate-4.2.0 urllib3-2.5.0 watchdog-5.0.3
+2025-09-04T12:31:21    
+2025-09-04T12:31:21    [notice] A new release of pip is available: 23.0.1 -> 25.2
+2025-09-04T12:31:21    [notice] To update, run: pip install --upgrade pip
+2025-09-04T12:31:21    Not a vso image, so not writing build commands
+2025-09-04T12:31:21    Preparing output...
+2025-09-04T12:31:22    
+2025-09-04T12:31:22    Copying files to destination directory '/tmp/_preCompressedDestinationDir'...
+2025-09-04T12:31:36    Done in 23 sec(s).
+2025-09-04T12:31:36    Compressing content of directory '/tmp/_preCompressedDestinationDir'...
+2025-09-04T12:32:56    Copied the compressed output to '/home/site/wwwroot'
+2025-09-04T12:32:56    
+2025-09-04T12:32:56    Removing existing manifest file
+2025-09-04T12:32:56    Creating a manifest file...
+2025-09-04T12:32:56    Manifest file created.
+2025-09-04T12:32:56    Copying .ostype to manifest output directory.
+2025-09-04T12:32:56    
+2025-09-04T12:32:56    Done in 215 sec(s).
+2025-09-04T12:32:56  Running post deployment command(s)...
+2025-09-04T12:32:57  
+2025-09-04T12:32:57  Generating summary of Oryx build
+2025-09-04T12:32:57  Parsing the build logs
+2025-09-04T12:32:57  Found 0 issue(s)
+2025-09-04T12:32:57  
+2025-09-04T12:32:58  Build Summary :
+2025-09-04T12:32:58  ===============
+2025-09-04T12:32:58  Errors (0)
+2025-09-04T12:32:58  Warnings (0)
+2025-09-04T12:32:58  
+2025-09-04T12:32:58  Triggering container recycle for OneDeploy by adding/updating restartTrigger.txt to the site root path
+2025-09-04T12:32:59  Deployment successful. deployer = OneDeploy deploymentPath = OneDeploy
