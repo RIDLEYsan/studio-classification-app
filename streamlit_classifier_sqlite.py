@@ -868,7 +868,7 @@ with tab2:
                 preview_cols = st.columns(4)
                 for i, file in enumerate(uploaded_files[:8]):
                     preview_cols[i % 4].image(
-                        file, caption=file.name, use_container_width=True
+                        file, caption=file.name, use_column_width=True
                     )
 
     with col2:
@@ -883,7 +883,7 @@ with tab2:
         use_impression = st.checkbox("印象タグ", value=True)
         use_object = st.checkbox("オブジェクトタグ", value=True)
 
-        if st.button("🚀 分析開始", type="primary", use_container_width=True):
+        if st.button("🚀 分析開始", type="primary", use_column_width=True):
             if uploaded_files and folder_name:
                 with st.spinner(f"🔍 {len(uploaded_files)}枚の画像を分析中..."):
                     # 画像準備
